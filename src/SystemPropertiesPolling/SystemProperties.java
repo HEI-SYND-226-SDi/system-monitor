@@ -82,8 +82,8 @@ public class SystemProperties {
      * @param args
      */
     public static void main(String[] args) {
+        SystemProperties sp = new SystemProperties();
         while (true) {
-            SystemProperties sp = new SystemProperties();
             sp.updateProperties();
             sp.pushToDbFull();
             sp.pushToDbRandom(.2);
@@ -92,5 +92,4 @@ public class SystemProperties {
             Utility.waitSomeTime(2500);
         }
     }
-
 }
