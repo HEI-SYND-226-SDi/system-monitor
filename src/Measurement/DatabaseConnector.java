@@ -6,6 +6,8 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.Arrays;
+import java.util.Base64;
 
 /**
  * The singleton class establish an HTTP connection to an InfluxDB server
@@ -20,9 +22,9 @@ public class DatabaseConnector {
     // Local variables
     private int 				_portNbr = 8086;
     private String 				_server = "vlesdi.hevs.ch";
-    private String 				_db = "<DB>";
-    private String 				_username = "<USER>";
-    private String 				_password = "<PASS>";
+    private String 				_db = "sdi42";
+    private String 				_username = "sdi42";
+    private String 				_password = "495450f1c928f0828926047ad396d5ac";
     private HttpURLConnection httpURLConnection;
 
     private DatabaseConnector() {
@@ -46,7 +48,7 @@ public class DatabaseConnector {
             URL obj           = new URL("http", _server, _portNbr, "/write?db=" + _db);
             String userpass   = _username + ":" + _password;
             httpURLConnection = (HttpURLConnection) obj.openConnection();
-            httpURLConnection.setRequestProperty ("Authorization", "Basic " + new sun.misc.BASE64Encoder().encode(userpass.getBytes()));
+            httpURLConnection.setRequestProperty ("Authorization", "Basic " + new String(Base64.getEncoder().encode(userpass.getBytes())));
             httpURLConnection.setRequestMethod("POST");
             httpURLConnection.setRequestProperty("Content-Type", "binary/octet-stream");
             httpURLConnection.setDoOutput(true);
