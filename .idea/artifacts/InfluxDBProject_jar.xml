@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="InfluxDBProject:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/InfluxDBProject_jar</output-path>
+    <root id="archive" name="InfluxDBProject.jar">
+      <element id="module-output" name="InfluxDBProject" />
+    </root>
+  </artifact>
+</component>

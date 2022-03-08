@@ -6,7 +6,6 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.util.Arrays;
 import java.util.Base64;
 
 /**
@@ -21,7 +20,7 @@ public class DatabaseConnector {
 
     // Local variables
     private int 				_portNbr = 8086;
-    private String 				_server = "vlesdi.hevs.ch";
+    private String 				_server = "influxdb.sdi.hevs.ch";
     private String 				_db = "sdi42";
     private String 				_username = "sdi42";
     private String 				_password = "495450f1c928f0828926047ad396d5ac";
