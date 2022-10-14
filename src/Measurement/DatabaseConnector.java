@@ -19,11 +19,11 @@ public class DatabaseConnector {
     private static DatabaseConnector pInstance = null;
 
     // Local variables
-    private int 				_portNbr = 8086;
-    private String 				_server = "influxdb.sdi.hevs.ch";
-    private String 				_db = "sdi42";
-    private String 				_username = "sdi42";
-    private String 				_password = "495450f1c928f0828926047ad396d5ac";
+    private int 				_portNbr = 443;
+    private String 				_server = "influx.sdi.hevs.ch";
+    private String              _bucket = "sdi42";
+    private String              _token = "Nipp-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
+    private String              _organization = "sdi42";
     private HttpURLConnection httpURLConnection;
 
     private DatabaseConnector() {
@@ -44,10 +44,9 @@ public class DatabaseConnector {
 
     public boolean write(String query) {
         try {
-            URL obj           = new URL("http", _server, _portNbr, "/write?db=" + _db);
-            String userpass   = _username + ":" + _password;
+            URL obj           = new URL("https", _server, _portNbr, "/api/v2/write?bucket=" + _bucket + "&org=" + _organization);
             httpURLConnection = (HttpURLConnection) obj.openConnection();
-            httpURLConnection.setRequestProperty ("Authorization", "Basic " + new String(Base64.getEncoder().encode(userpass.getBytes())));
+            httpURLConnection.setRequestProperty ("Authorization", "Token " + _token);
             httpURLConnection.setRequestMethod("POST");
             httpURLConnection.setRequestProperty("Content-Type", "binary/octet-stream");
             httpURLConnection.setDoOutput(true);
