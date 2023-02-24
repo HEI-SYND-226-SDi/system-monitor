@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="InfluxDBProject:jar" />
+      <artifact name="monitor:jar" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
@@ -29,7 +29,8 @@
   <component name="ChangeListManager">
     <list default="true" id="51010699-4ad0-43ea-b127-c35ee8ed30ce" name="Default" comment="Add storage of CPU load and add a second fake device, with doubled CPU load and Memory usage">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SystemPropertiesPolling/SystemProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SystemPropertiesPolling/SystemProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/influx/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/influx/Point.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +40,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -51,59 +53,54 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="1oGGEuHW3rw2hJwxoenk4GaI9iu" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="full.screen.before.presentation.mode" value="false" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.path.for.package.tslint" value="project" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Artifacts" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "true",
+    "last_opened_file_path": "/Users/michael/HEI/Ausbildung/226_SDi/NoSQL-exercise-starter-code",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="monitor" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.SystemProperties">
+  <component name="RunManager">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <module />
     </configuration>
-    <configuration name="Point" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Measurement.Point" />
-      <module name="InfluxDBProject" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Measurement.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SystemProperties" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SystemPropertiesPolling.SystemProperties" />
-      <module name="InfluxDBProject" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="SystemPropertiesPolling.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="monitor" />
+      <option name="PROGRAM_PARAMETERS" value="sdi42 Pi0kPQY9uzlLpcv5jsMlufQe7vd8tI1E3dTq9LUj4klkom7VpaIilXJAqCZQNvPWkrFOlU5VRNdHFDmgNfDlkA==" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -139,14 +136,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <list>
-      <item itemvalue="Application.Point" />
-      <item itemvalue="Application.SystemProperties" />
-    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.SystemProperties" />
-        <item itemvalue="Application.Point" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -176,7 +168,10 @@
       <workItem from="1652705377071" duration="2120000" />
       <workItem from="1653919189675" duration="51000" />
       <workItem from="1677083595624" duration="6980000" />
-      <workItem from="1677223053362" duration="436000" />
+      <workItem from="1677223053362" duration="791000" />
+      <workItem from="1677226753410" duration="1009000" />
+      <workItem from="1677232131384" duration="10004000" />
+      <workItem from="1677244463020" duration="434000" />
     </task>
     <task id="LOCAL-00001" summary="Replace tag &quot;PC&quot; with tag &quot;Device&quot; and initialise it with final static variable">
       <created>1646749706959</created>
@@ -185,7 +180,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646749706959</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add storage of CPU load and add a second fake device, with doubled CPU load and Memory usage">
+      <created>1677223529668</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1677223529669</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -213,22 +215,10 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Replace tag &quot;PC&quot; with tag &quot;Device&quot; and initialise it with final static variable" />
     <MESSAGE value="Add storage of CPU load and add a second fake device, with doubled CPU load and Memory usage" />
     <option name="LAST_COMMIT_MESSAGE" value="Add storage of CPU load and add a second fake device, with doubled CPU load and Memory usage" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/SystemPropertiesPolling/SystemProperties.java</url>
-          <line>96</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
