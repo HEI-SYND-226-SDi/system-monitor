@@ -5,6 +5,9 @@
       <artifact name="InfluxDBProject:jar" />
     </artifacts-to-build>
   </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -24,11 +27,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51010699-4ad0-43ea-b127-c35ee8ed30ce" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/InfluxDBProject_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="51010699-4ad0-43ea-b127-c35ee8ed30ce" name="Default" comment="Add storage of CPU load and add a second fake device, with doubled CPU load and Memory usage">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Measurement/DatabaseConnector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Measurement/DatabaseConnector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SystemPropertiesPolling/SystemProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SystemPropertiesPolling/SystemProperties.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,8 +171,21 @@
       <workItem from="1613984853265" duration="828000" />
       <workItem from="1613986830006" duration="1235000" />
       <workItem from="1615205171929" duration="197000" />
-      <workItem from="1646749153708" duration="490000" />
+      <workItem from="1646749153708" duration="1358000" />
+      <workItem from="1646820892522" duration="26000" />
+      <workItem from="1652705377071" duration="2120000" />
+      <workItem from="1653919189675" duration="51000" />
+      <workItem from="1677083595624" duration="6980000" />
+      <workItem from="1677223053362" duration="436000" />
     </task>
+    <task id="LOCAL-00001" summary="Replace tag &quot;PC&quot; with tag &quot;Device&quot; and initialise it with final static variable">
+      <created>1646749706959</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1646749706959</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,19 +196,36 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Replace tag &quot;PC&quot; with tag &quot;Device&quot; and initialise it with final static variable" />
+    <MESSAGE value="Add storage of CPU load and add a second fake device, with doubled CPU load and Memory usage" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add storage of CPU load and add a second fake device, with doubled CPU load and Memory usage" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/SystemPropertiesPolling/SystemProperties.java</url>
-          <line>75</line>
+          <line>96</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
