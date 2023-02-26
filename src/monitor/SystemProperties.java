@@ -25,8 +25,15 @@ public class SystemProperties implements Runnable {
     }
 
     public void update() {
-        cpuLoad = os.getProcessCpuLoad();
-        usedMemory = os.getTotalMemorySize() - os.getFreeMemorySize();
+        double cpuLoad = os.getProcessCpuLoad();
+        if (cpuLoad >= 0.0) {
+            this.cpuLoad = cpuLoad;
+        }
+        double totalMemory = os.getTotalMemorySize();
+        double freeMemory = os.getFreeMemorySize();
+        if (totalMemory  >= 0.0  && freeMemory >= 0.0)  {
+            usedMemory = totalMemory - freeMemory;
+        }
     }
 
     public void push() {
