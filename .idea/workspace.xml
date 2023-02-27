@@ -29,6 +29,7 @@
   <component name="ChangeListManager">
     <list default="true" id="51010699-4ad0-43ea-b127-c35ee8ed30ce" name="Default" comment="Add storage of CPU load and add a second fake device, with doubled CPU load and Memory usage">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monitor.jar" beforeDir="false" afterPath="$PROJECT_DIR$/monitor.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/monitor/SystemProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/monitor/SystemProperties.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -174,7 +175,8 @@
       <workItem from="1677265592315" duration="666000" />
       <workItem from="1677267593708" duration="30000" />
       <workItem from="1677350294998" duration="392000" />
-      <workItem from="1677441750109" duration="424000" />
+      <workItem from="1677441750109" duration="590000" />
+      <workItem from="1677485699503" duration="194000" />
     </task>
     <task id="LOCAL-00001" summary="Replace tag &quot;PC&quot; with tag &quot;Device&quot; and initialise it with final static variable">
       <created>1646749706959</created>

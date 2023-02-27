@@ -25,7 +25,7 @@ public class SystemProperties implements Runnable {
     }
 
     public void update() {
-        double cpuLoad = os.getProcessCpuLoad();
+        double cpuLoad = os.getCpuLoad();
         if (cpuLoad >= 0.0) {
             this.cpuLoad = cpuLoad;
         }
