@@ -16,7 +16,7 @@ public class Main {
             SystemProperties systemProperties = new SystemProperties(connection);
             systemProperties.run();
         } catch (MalformedURLException exception) {
-            System.err.println("Invalid URL: " + exception.getMessage());
+            System.err.print("Invalid URL: " + exception.getMessage());
             System.exit(1);
         }
     }

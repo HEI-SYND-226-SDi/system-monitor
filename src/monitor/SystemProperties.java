@@ -50,7 +50,7 @@ public class SystemProperties implements Runnable {
                     .field("CpuLoadFull", Math.min(cpuLoad * 2.0, 1.0))
                     .write(connection);
         } catch (IOException exception) {
-            System.err.println("Failed to write to InfluxDB: " + exception.getMessage());
+            System.err.print("Failed to write to InfluxDB: " + exception.getClass().getSimpleName() + " -> " + exception.getMessage());
         }
     }
 
@@ -69,7 +69,7 @@ public class SystemProperties implements Runnable {
                         .field("CpuLoadRandom", Math.min(cpuLoad * 2.0, 1.0))
                         .write(connection);
             } catch (IOException exception) {
-                System.err.println("Failed to write to InfluxDB: " + exception.getMessage());
+                System.err.print("Failed to write to InfluxDB: " + exception.getMessage());
             }
         }
     }
@@ -91,7 +91,7 @@ public class SystemProperties implements Runnable {
                         .field("CpuLoadBurst", Math.min(cpuLoad * 2.0, 1.0))
                         .write(connection);
             } catch (IOException exception) {
-                System.err.println("Failed to write to InfluxDB: " + exception.getMessage());
+                System.err.print("Failed to write to InfluxDB: " + exception.getMessage());
             }
         } else {
             if (Math.random() < rate) {
@@ -107,7 +107,7 @@ public class SystemProperties implements Runnable {
         int animationPosition = 0;
 
         while (running) {
-            System.out.print("\r Sending CPU/Memory monitoring data to InfluxDB... [" + animation[animationPosition++ % animation.length] + "] ");
+            System.out.print("\rSending CPU/Memory monitoring data to InfluxDB... [" + animation[animationPosition++ % animation.length] + "] ");
             update();
             push();
             pushRandom(.2);
