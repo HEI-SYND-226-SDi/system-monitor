@@ -4,7 +4,7 @@ import monitor.SystemProperties;
 import java.net.MalformedURLException;
 
 public class Main {
-    private static final String URL = "https://influx.sdi.hevs.ch";
+    private static final String URL = "https://influx.dbv.synd.hevs.ch";
 
     public static void main(String[] args) {
         if (args.length != 2) {
