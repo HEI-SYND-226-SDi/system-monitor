@@ -7,12 +7,12 @@ public class Main {
     private static final String URL = "https://influx.dbv.synd.hevs.ch";
 
     public static void main(String[] args) {
-        if (args.length != 2) {
+        if (args.length != 3) {
             usage();
         }
 
         try {
-            Connection connection = new Connection(URL, args[0], args[1]);
+            Connection connection = new Connection(URL, args[0], args[1], args[2]);
             SystemProperties systemProperties = new SystemProperties(connection);
             systemProperties.run();
         } catch (MalformedURLException exception) {
@@ -22,7 +22,7 @@ public class Main {
     }
 
     private static void usage() {
-        System.out.println("java -jar monitor.jar <organisation> <token>");
+        System.out.println("java -jar monitor.jar <organisation> <bucket> <token>");
         System.exit(1);
     }
 }

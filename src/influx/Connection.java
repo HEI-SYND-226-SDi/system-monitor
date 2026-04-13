@@ -10,9 +10,8 @@ public final class Connection {
     private final URL url;
     private final String token;
 
-    public Connection(String url, String organisation, String token) throws MalformedURLException {
-//        this.url = new URL(url + "/api/v2/write?bucket=" + organisation + "&org=" + organisation);
-        this.url = new URL(url + "/api/v2/write?bucket=" + organisation + "&org=02db13bf67effb6e");
+    public Connection(String url, String organisation, String bucket, String token) throws MalformedURLException {
+        this.url = new URL(url + "/api/v2/write?org=" + organisation + "&bucket=" + bucket);
         this.token = token;
     }
 
